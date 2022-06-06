@@ -18,8 +18,7 @@ public class Search {
                 .getName()
                 .endsWith(".txt"));
         search.save(tree, "./out.txt");
-
-
+        System.out.println("Готово. Сгенерирован файл out.txt с ответами в директории программы.");
     }
 
     private Map<String, String> search(Path root, Predicate<Path> condition) throws IOException {
