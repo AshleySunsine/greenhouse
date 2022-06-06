@@ -55,11 +55,13 @@
                             <goal>shade</goal>
                         </goals>
                         <configuration>
-                            <finalName>Searcher</finalName>
+                            <!--  <finalName>Searcher</finalName> -->
+                            <finalName>Tracker</finalName>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>ru.financialtechnology.exfirst.Search</mainClass>
+                                  <!--  <mainClass>ru.financialtechnology.exfirst.Search</mainClass>  -->
+                                    <mainClass>ru.financialtechnology.exsecond.HTwoMemory</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>
